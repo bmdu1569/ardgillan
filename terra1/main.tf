@@ -130,7 +130,7 @@ resource "aws_efs_mount_target" "dashdb_test" {
 }
 
 ############################################################
-# Create AWS instance (add depends)
+# Create AWS instance  (depends on EFS mount point available)
 ############################################################
 
 variable "instance_count" {
